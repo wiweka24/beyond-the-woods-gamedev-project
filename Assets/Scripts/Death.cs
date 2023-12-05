@@ -28,7 +28,7 @@ public class Death : MonoBehaviour
 
   private void Die()
   {
-    // deathSoundEffect.Play();
+    deathSoundEffect.Play();
     rb.bodyType = RigidbodyType2D.Static;
     onTrap = true;
   }

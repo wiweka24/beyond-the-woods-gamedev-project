@@ -41,6 +41,15 @@ public class Movement : MonoBehaviour
   public ParticleSystem wallJumpParticle;
   public ParticleSystem slideParticle;
 
+  [Header("Audio")]
+  [SerializeField] private AudioSource jumpSoundEffect;
+  [SerializeField] private AudioSource dashSoundEffect;
+  [SerializeField] private AudioSource landingSoundEffect;
+  [SerializeField] private AudioSource clingSoundEffect;
+  [SerializeField] private AudioSource walkSoundEffect;
+
+
+
   // Start is called before the first frame update
   void Start()
   {
@@ -110,6 +119,7 @@ public class Movement : MonoBehaviour
 
     if (Input.GetButtonDown("Jump"))
     {
+      jumpSoundEffect.Play();
       anim.SetTrigger("jump");
 
       if (coll.onGround)
@@ -161,6 +171,7 @@ public class Movement : MonoBehaviour
 
     side = anim.sr.flipX ? -1 : 1;
 
+    landingSoundEffect.Play();
     jumpParticle.Play();
   }
 
@@ -172,6 +183,7 @@ public class Movement : MonoBehaviour
 
     hasDashed = true;
 
+    dashSoundEffect.Play();
     anim.SetTrigger("dash");
 
     rb.velocity = Vector2.zero;
@@ -229,6 +241,9 @@ public class Movement : MonoBehaviour
 
   private void WallSlide()
   {
+    if (!clingSoundEffect.isPlaying)
+      clingSoundEffect.Play();
+
     if (coll.wallSide != side)
       anim.Flip(side * -1);
 
@@ -260,6 +275,12 @@ public class Movement : MonoBehaviour
     else
     {
       rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed, rb.velocity.y)), wallJumpLerp * Time.deltaTime);
+    }
+
+    if (rb.velocity.x != 0 && coll.onGround)
+    {
+      if (!walkSoundEffect.isPlaying)
+        walkSoundEffect.Play();
     }
   }
 
