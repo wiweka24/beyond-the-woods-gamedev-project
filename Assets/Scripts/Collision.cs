@@ -5,52 +5,53 @@ using UnityEngine;
 public class Collision : MonoBehaviour
 {
 
-    [Header("Layers")]
-    public LayerMask groundLayer;
+  [Header("Layers")]
+  public LayerMask groundLayer;
 
-    [Space]
+  [Space]
 
-    public bool onGround;
-    public bool onWall;
-    public bool onRightWall;
-    public bool onLeftWall;
-    public int wallSide;
+  public bool onGround;
+  public bool onWall;
+  public bool onRightWall;
+  public bool onLeftWall;
+  public int wallSide;
+  public bool onTrap;
 
-    [Space]
+  [Space]
 
-    [Header("Collision")]
+  [Header("Collision")]
 
-    public float collisionRadius = 0.25f;
-    public Vector2 bottomOffset, rightOffset, leftOffset;
-    private Color debugCollisionColor = Color.red;
+  public float collisionRadius = 0.25f;
+  public Vector2 bottomOffset, rightOffset, leftOffset;
+  private Color debugCollisionColor = Color.red;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  // Start is called before the first frame update
+  void Start()
+  {
 
-    // Update is called once per frame
-    void Update()
-    {  
-        onGround = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
-        onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer) 
-            || Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
+  }
 
-        onRightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer);
-        onLeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
+  // Update is called once per frame
+  void Update()
+  {
+    onGround = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
+    onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer)
+        || Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
 
-        wallSide = onRightWall ? -1 : 1;
-    }
+    onRightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer);
+    onLeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
 
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
+    wallSide = onRightWall ? -1 : 1;
+  }
 
-        var positions = new Vector2[] { bottomOffset, rightOffset, leftOffset };
+  void OnDrawGizmos()
+  {
+    Gizmos.color = Color.red;
 
-        Gizmos.DrawWireSphere((Vector2)transform.position  + bottomOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
-    }
+    var positions = new Vector2[] { bottomOffset, rightOffset, leftOffset };
+
+    Gizmos.DrawWireSphere((Vector2)transform.position + bottomOffset, collisionRadius);
+    Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
+    Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
+  }
 }

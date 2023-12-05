@@ -8,6 +8,7 @@ public class AnimationScript : MonoBehaviour
   private Animator anim;
   private Movement move;
   private Collision coll;
+  private Death dth;
   [HideInInspector]
   public SpriteRenderer sr;
 
@@ -17,6 +18,7 @@ public class AnimationScript : MonoBehaviour
     coll = GetComponentInParent<Collision>();
     move = GetComponentInParent<Movement>();
     sr = GetComponent<SpriteRenderer>();
+    dth = GetComponent<Death>();
   }
 
   void Update()
@@ -28,7 +30,7 @@ public class AnimationScript : MonoBehaviour
     anim.SetBool("wallSlide", move.wallSlide);
     anim.SetBool("canMove", move.canMove);
     anim.SetBool("isDashing", move.isDashing);
-
+    anim.SetBool("isDeath", dth.onTrap);
   }
 
   public void SetHorizontalMovement(float x, float y, float yVel)
