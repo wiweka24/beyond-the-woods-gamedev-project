@@ -32,7 +32,6 @@ public class Interacable : MonoBehaviour
       if (Input.GetKeyDown(interactKey))
       {
         panelSummary.SetActive(true);
-
         move.canMove = false;
 
         // if dialog

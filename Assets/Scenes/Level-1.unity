@@ -3639,6 +3639,9 @@ MonoBehaviour:
   interactKey: 97
   aButton: {fileID: 275345077}
   panelSummary: {fileID: 1677960953}
+  player: {fileID: 480563600}
+  isDialog: 0
+  images: []
 --- !u!61 &162491855
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16428,6 +16431,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472631798}
   m_CullTransparentMesh: 0
+--- !u!1 &480563600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 561025433771379127, guid: db2c788c2f2f008438c785bb6ddbc0e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 44932326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -18671,12 +18680,12 @@ PrefabInstance:
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.11
       objectReference: {fileID: 0}
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -9.37
       objectReference: {fileID: 0}
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
@@ -18686,22 +18695,22 @@ PrefabInstance:
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
@@ -18716,7 +18725,7 @@ PrefabInstance:
     - target: {fileID: 3096233964145168505, guid: dbbadd45a1aff0e499dda4dbe84a78ff,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbbadd45a1aff0e499dda4dbe84a78ff, type: 3}
