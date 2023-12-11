@@ -160,8 +160,6 @@ public class Movement : MonoBehaviour
       side = -1;
       anim.Flip(side);
     }
-
-
   }
 
   void GroundTouch()

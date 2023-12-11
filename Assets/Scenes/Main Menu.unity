@@ -4868,7 +4868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185926949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.41, y: 7.8, z: 0}
+  m_LocalPosition: {x: 0.94, y: 6.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5082,8 +5082,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825108165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.47, y: 0.47, z: 0}
+  m_LocalPosition: {x: -0.004, y: 0, z: 10}
+  m_LocalScale: {x: 0.5839128, y: 0.5839128, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -5126,8 +5126,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357172022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 305, y: 123, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 0.55253166}
+  m_LocalPosition: {x: 305, y: 83, z: 0}
+  m_LocalScale: {x: 21, y: 21, z: 0.55253166}
   m_Children: []
   m_Father: {fileID: 270864793}
   m_RootOrder: 1
@@ -5211,14 +5211,14 @@ RectTransform:
   m_GameObject: {fileID: 1611734202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 270864793}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6867931, y: 0.3086939}
   m_AnchorMax: {x: 0.6867931, y: 0.3086939}
-  m_AnchoredPosition: {x: 85, y: 58}
+  m_AnchoredPosition: {x: 85, y: 24}
   m_SizeDelta: {x: 20.609009, y: 8.733425}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611734204
@@ -5341,7 +5341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1664198194
 Transform:
   m_ObjectHideFlags: 0
@@ -5422,7 +5422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1836920505
 Transform:
   m_ObjectHideFlags: 0
@@ -5541,7 +5541,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

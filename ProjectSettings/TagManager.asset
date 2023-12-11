@@ -8,6 +8,7 @@ TagManager:
   - Menu
   - NextLevel
   - GameSummary
+  - End
   layers:
   - Default
   - TransparentFX

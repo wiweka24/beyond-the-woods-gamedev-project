@@ -21,10 +21,19 @@ public class NextLevel : MonoBehaviour
     {
       GoToNextLevel();
     }
+    else if (collision.gameObject.CompareTag("End"))
+    {
+      GoToMainMenu();
+    }
   }
 
   private void GoToNextLevel()
   {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+  }
+
+  private void GoToMainMenu()
+  {
+    SceneManager.LoadScene(0);
   }
 }
