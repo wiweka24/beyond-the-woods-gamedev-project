@@ -11204,6 +11204,7 @@ MonoBehaviour:
   interactKey: 97
   aButton: {fileID: 967591488}
   panelSummary: {fileID: 144619761}
+  player: {fileID: 1952885648}
   isDialog: 1
   images:
   - {fileID: 2014136988}
@@ -13138,7 +13139,7 @@ GameObject:
   - component: {fileID: 1633739517}
   m_Layer: 0
   m_Name: EndLevel
-  m_TagString: NextLevel
+  m_TagString: End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13837,6 +13838,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db2c788c2f2f008438c785bb6ddbc0e6, type: 3}
+--- !u!1 &1952885648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 561025433771379127, guid: db2c788c2f2f008438c785bb6ddbc0e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1856975255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1965751712
 GameObject:
   m_ObjectHideFlags: 0

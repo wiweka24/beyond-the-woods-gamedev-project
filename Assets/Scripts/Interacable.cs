@@ -9,7 +9,8 @@ public class Interacable : MonoBehaviour
   public KeyCode interactKey;
   public GameObject aButton;
   public GameObject panelSummary;
-  public Movement move;
+  public GameObject player;
+  private Movement move;
 
   // if panel is dialog
   public bool isDialog;
@@ -19,7 +20,7 @@ public class Interacable : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-    move = GetComponent<Movement>();
+    move = player.GetComponent<Movement>();
   }
 
   // Update is called once per frame
@@ -47,6 +48,7 @@ public class Interacable : MonoBehaviour
             panelSummary.SetActive(false);
             DisableImage();
             currentImageIndex = 0;
+            move.canMove = true;
           }
         }
       }
@@ -61,6 +63,7 @@ public class Interacable : MonoBehaviour
       panelSummary.SetActive(false);
       DisableImage();
       currentImageIndex = 0;
+      move.canMove = true;
     }
   }
 
