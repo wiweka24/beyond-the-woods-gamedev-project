@@ -17350,10 +17350,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8965914846884792115, guid: e2436e94a3a7314409878d8ed1568525,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8965914846884792116, guid: e2436e94a3a7314409878d8ed1568525,
         type: 3}
       propertyPath: m_Name
       value: Enemy-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965914846884792116, guid: e2436e94a3a7314409878d8ed1568525,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
       objectReference: {fileID: 0}
     - target: {fileID: 8965914846884792118, guid: e2436e94a3a7314409878d8ed1568525,
         type: 3}
@@ -18736,10 +18746,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8965914846884792115, guid: e2436e94a3a7314409878d8ed1568525,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8965914846884792116, guid: e2436e94a3a7314409878d8ed1568525,
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965914846884792116, guid: e2436e94a3a7314409878d8ed1568525,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
       objectReference: {fileID: 0}
     - target: {fileID: 8965914846884792118, guid: e2436e94a3a7314409878d8ed1568525,
         type: 3}
